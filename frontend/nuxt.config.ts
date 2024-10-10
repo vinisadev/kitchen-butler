@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
   runtimeConfig: {
     public: {
-      apiBase: "https://localhost:8080",
+      apiBase: "http://localhost:8080",
     },
   },
 });
