@@ -4,6 +4,7 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
+	"golang.org/x/crypto/bcrypt"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -43,7 +44,32 @@ func main() {
 }
 
 func signUp(c *gin.Context) {
-	// Implement user signup logic
+	var input struct {
+		Email string `json:"email" binding:"required,email"`
+		Password string `json:"password" binding:"required,min=8"`
+	}
+	if err := c.ShouldBindJSON(&input); err != nil {
+		c.JSON(400, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Hash the password
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(input.Password), bcrypt.DefaultCost)
+	if err != nil {
+		c.JSON(500, gin.H{"error": "Failed to hash password"})
+		return
+	}
+
+	user := User{
+		Email: input.Email,
+		PasswordHash: string(hashedPassword),
+	}
+
+	if result := db.Create(&user); result.Error != nil {
+		c.JSON(500, gin.H{"error": "Failed to create user"})
+		return
+	}
+	c.JSON(201, gin.H{"message": "User created successfully"})
 }
 
 func login(c *gin.Context) {
