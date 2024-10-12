@@ -10,10 +10,10 @@
     "postinstall": "nuxt prepare",
     "start": "node .output/server/index.mjs"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.2",
+    "@nuxt/ui": "^2.18.7",
     "eslint": "^8.56.0",
     "nuxt": "^3.13.0",
     "vue": "latest",
