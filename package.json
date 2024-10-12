@@ -13,6 +13,8 @@
   "dependencies": {},
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.2",
+    "@formkit/auto-animate": "^0.8.2",
+    "@iconify-json/logos": "^1.2.3",
     "@iconify-json/tabler": "^1.2.5",
     "@nuxt/icon": "^1.5.6",
     "@nuxt/ui": "^2.18.7",
