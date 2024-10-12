@@ -21,7 +21,9 @@ class StripeService {
 
   async updateProducts() {
     const prices = await this.getPrices()
+    console.log(prices[0])
     const products = this.pricesToProducts(prices)
+    console.log(products)
     await db.delete(tables.product)
     await db.insert(tables.product).values(products)
   }

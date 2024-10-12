@@ -1082,6 +1082,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/solar@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@iconify-json/solar/-/solar-1.2.1.tgz#6b30e4ffed0954163df1e026bb47adf51db70195"
+  integrity sha512-LA3WZ7HOi5O/sEc2M+BcQNJYNFDnUKP+ZldmNf8kwndnCuFMo+fukt6tSu4BqYRsRgp/Ku4xnys1JGBDi+QtCQ==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/tabler@^1.2.5":
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/@iconify-json/tabler/-/tabler-1.2.5.tgz#540bd296fba540fbbbdd716e48a7b9327aa9d9dd"
