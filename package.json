@@ -11,6 +11,10 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.2",
+    "eslint": "^8.56.0",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
