@@ -821,14 +821,6 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify/json@^2.2.166":
-  version "2.2.259"
-  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.259.tgz#b6c789a8dea1e0440b484e68c592f211af87b7cd"
-  integrity sha512-QA5chdx3Jw/jpPv6NrABJIbG6++572KocO/hyebEpSx0KYPc1f5dWkGG1tFu6v9NB7Xls8bXZHXak011Gvoiiw==
-  dependencies:
-    "@iconify/types" "*"
-    pathe "^1.1.2"
-
 "@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
@@ -1063,7 +1055,7 @@
     which "^3.0.1"
     ws "^8.18.0"
 
-"@nuxt/icon@^1.5.5":
+"@nuxt/icon@^1.5.5", "@nuxt/icon@^1.5.6":
   version "1.5.6"
   resolved "https://registry.yarnpkg.com/@nuxt/icon/-/icon-1.5.6.tgz#390de43c1d05c0d004521bc257c19111868645e9"
   integrity sha512-7l99CWc/laHphSsoLikh99Hkwjv+59cwAMJ0f9eZddBV+vO7zLGWwocH/TDNjlX0IACgVoG+AfbP/p1fqlLKpg==
