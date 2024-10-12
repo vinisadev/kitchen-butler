@@ -8,7 +8,12 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    databaseUrl: ''
+    databaseUrl: '',
+    stripe: {
+      publishableKey: '',
+      secretKey: '',
+      webhookSecret: '',
+    },
   },
   modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', '@nuxt/icon'],
   ui: {
