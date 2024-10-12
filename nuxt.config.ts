@@ -10,5 +10,6 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxtjs/tailwindcss'],
   ui: {
     global: true,
+    icons: ['solar', 'tabler', 'octicon', 'devicon', 'logos'],
   },
 })

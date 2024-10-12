@@ -10,7 +10,9 @@
     "postinstall": "nuxt prepare",
     "start": "node .output/server/index.mjs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@iconify/json": "^2.2.166"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.2",
     "@nuxt/ui": "^2.18.7",

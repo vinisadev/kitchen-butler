@@ -3,5 +3,7 @@
     <div class="px-4 flex-grow">
       <slot />
     </div>
+
+    <MarketingFooter />
   </div>
 </template>
