@@ -10,7 +10,7 @@
           Take control of your Kitchen
         </h1>
         <h2 class="text-4xl font-extrabold mx-auto md:text-5xl">
-          With <span class="text-transparent bg-clip-text bg-gradient-to-r from-[$4ade80] to-[#166534]">Kitchen
+          With <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4ade80] to-[#166534]">Kitchen
             Butler</span>
         </h2>
         <p class="max-w-2xl mx-auto">
