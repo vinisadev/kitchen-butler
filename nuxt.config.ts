@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss'],
   ui: {
     global: true,
   },
