@@ -7,6 +7,9 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+  runtimeConfig: {
+    databaseUrl: ''
+  },
   modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', '@nuxt/icon'],
   ui: {
     global: true,
