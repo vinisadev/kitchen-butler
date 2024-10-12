@@ -10,7 +10,13 @@
     "postinstall": "nuxt prepare",
     "start": "node .output/server/index.mjs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@lucia-auth/adapter-postgresql": "^2.0.2",
+    "@lucia-auth/oauth": "^3.5.1",
+    "drizzle-orm": "^0.29.3",
+    "lucia": "^2.7.6",
+    "postgres": "^3.4.3"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.2",
     "@formkit/auto-animate": "^0.8.2",
@@ -19,6 +25,7 @@
     "@nuxt/icon": "^1.5.6",
     "@nuxt/ui": "^2.18.7",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "drizzle-kit": "^0.20.10",
     "eslint": "^8.56.0",
     "nuxt": "^3.13.0",
     "vue": "latest",
