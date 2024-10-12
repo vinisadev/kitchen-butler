@@ -6,15 +6,15 @@ function toggleFaq(index: number) {
 const faqs = [
   {
     q: 'What do I get with this?',
-    a: '',
+    a: 'With Kitchen Butler, you get a full kitchen management solution. From being able to automatically create and manage shopping lists, to meal planning calendars, to recipe management and more. Kitchen Butler turns your kitchen into an efficient workspace.',
   },
   {
     q: 'Is it easy to setup?',
-    a: '',
+    a: 'Kitchen Butler is extremely easy to setup. No software to download (unless you count our mobile app [still a work in progress]), and helpful wizards and informational popups to help guide you through taking control of your kitchen.',
   },
   {
     q: 'I have other questions!',
-    a: '',
+    a: 'That\'s great! If you question wasn\'t answered here, you can email us at support@kitchenbutler.io or join our Discord server!',
   },
 ]
 </script>
