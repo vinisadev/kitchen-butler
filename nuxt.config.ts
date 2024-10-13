@@ -22,8 +22,14 @@ export default defineNuxtConfig({
       webhookSecret: '',
     },
   },
-  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', '@nuxt/icon'],
+  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxtjs/plausible'],
   ui: {
     global: true,
+  },
+
+  plausible: {
+    domain: process.env.PLAUSIBLE_DOMAIN,
+    apiHost: process.env.PLUAISBLE_API_HOST ?? 'https://plausible.io',
+    trackLocalhost: true,
   },
 })

@@ -1,5 +1,18 @@
 <script setup lang="ts">
 import type { FormSubmitEvent } from '#ui/types'
+import { z } from 'zod'
+
+const user = useUser()
+if (user.value)
+  await navigateTo('/app')
+
+const schema = z.object({
+  name: z.string(),
+  email: z.string().email('Invalid email'),
+  password: z.string().min(8, 'Must be at least 8 characters'),
+})
+
+type Schema = z.output<typeof schema>
 
 const errorMessage = ref('')
 const state = reactive({
@@ -9,7 +22,16 @@ const state = reactive({
 })
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
-
+  const res = await $fetch('/api/auth/signup', {
+    ignoreResponseError: true,
+    method: 'POST',
+    body: event.data,
+    redirect: 'manual',
+  })
+  if (res.success)
+    await navigateTo('/app')
+  else
+    errorMessage.value = res.message
 }
 </script>
 
