@@ -9,6 +9,13 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     databaseUrl: '',
+    public: {
+      url: '',
+    },
+    google: {
+      clientId: '',
+      clientSecret: '',
+    },
     stripe: {
       publishableKey: '',
       secretKey: '',

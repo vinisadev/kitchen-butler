@@ -33,7 +33,7 @@ const navigation: { title: string, to: string }[] = []
         <div>
           <ul class="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
             <li class="mt-4 lg:mt-0">
-              <!-- <AuthButton /> -->
+              <AuthButton />
             </li>
           </ul>
         </div>
